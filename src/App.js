@@ -1,3 +1,6 @@
+// APP JS
+// ---------------------------------------------------------------------------
+
 import React from 'react';
 import TableBody from './components/TableBody';
 import Header from './components/Header';
