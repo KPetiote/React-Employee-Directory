@@ -11,14 +11,14 @@ function Table(props) {
                 <thead>
                     <tr style={{ fontStyle: "italic" }}>
                         <th scope="col"></th>
-                        <th scope="col">Name
-                    <button style={{ border: 0, background: "white" }} onClick={props.sortName}>
+                        <th scope="col">Name:
+                        <button style={{ border: 0, background: "white" }} onClick={props.sortName}>
                                 <i className="fas fa-sort"></i>
-                            </button>
+                        </button>
                         </th>
-                        <th scope="col">Location</th>
-                        <th scope="col">Phone Number</th>
-                        <th scope="col">Email</th>
+                        <th scope="col">Location:</th>
+                        <th scope="col">Phone Number:</th>
+                        <th scope="col">Email:</th>
                     </tr>
                 </thead>
 
@@ -26,7 +26,7 @@ function Table(props) {
                     {props.list.map(user => (
                         <tr key={user.login.uuid}>
                             <td className="align-middle text-center">
-                                <img src={user.picture.medium} className="rounded-circle" alt="Employee Profile" />
+                                <img src={user.picture.large} className="rounded-circle" alt="Employee Profile" />
                             </td>
                             <td className="align-middle">{user.name.first} {user.name.last}</td>
                             <td className="align-middle">{user.location.state}</td>
