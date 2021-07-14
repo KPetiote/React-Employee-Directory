@@ -7,7 +7,7 @@ function Header() {
     return (
         <div className="text-center bg-success p-4">
             <h1 style={{ fontSize: 55, color: "white" }}>Employee Directory</h1>
-            <p style={{ color: "white" }}>Employee Details</p>
+            <p style={{ color: "white" }}>Please select the "A-Z" icon to sort names alphabetically</p>
         </div>
     )
 }
