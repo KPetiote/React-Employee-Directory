@@ -1,5 +1,5 @@
 import React from 'react';
-import Body from "./Body";
+import Body from "../components/Body";
 
 function Table(props) {
     return (
