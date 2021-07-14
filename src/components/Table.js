@@ -13,7 +13,7 @@ function Table(props) {
                         <th scope="col"></th>
                         <th scope="col">Name:
                         <button style={{ border: 0, background: "white" }} onClick={props.sortName}>
-                                <i className="fas fa-sort"></i>
+                            <i class="fas fa-sort-alpha-up"></i>
                         </button>
                         </th>
                         <th scope="col">Location:</th>
