@@ -1,4 +1,4 @@
-// TABLE BODY JS
+// TABLE JS
 // ---------------------------------------------------------------------------
 
 import React, { useState, useEffect } from 'react';
@@ -17,27 +17,49 @@ function TableBody() {
         setUsersState(result.data.results);
     }
 
-    function sortName() {
-        console.log("sorting by name");
+    function sortFirstName() {
+        console.log("sorting by first name");
 
-        const sorted = usersState.sort((a, b) => {
-            if (a.name.first < b.name.first) {
+        const sortedFirstName = usersState.sort((a, b) => {
+            var nameA = a.name.first.toLowerCase();
+            var nameB = b.name.first.toLowerCase();
+
+            if (nameA < nameB) {
                 return -1;
-            } else if (a.name.first > b.name.first) {
-                return 1;
-            } else {
-                return 0;
             }
+            if (nameA > nameB) {
+                return 1;
+            }
+            return 0;
         });
 
-        setUsersState([...sorted]);
+        setUsersState([...sortedFirstName]);
+    }
+
+    function sortLastName() {
+        console.log("sorting by last name");
+
+        const sortedLastName = usersState.sort((a, b) => {
+            var nameA = a.name.last.toLowerCase();
+            var nameB = b.name.last.toLowerCase();
+            
+            if (nameA < nameB) {
+                return -1;
+            }
+            if (nameA > nameB) {
+                return 1;
+            }
+            return 0;
+        });
+        setUsersState([...sortedLastName]);
     }
 
     return (
         <div>
             <Table
                 list={usersState}
-                sortName={sortName}
+                sortFirstName={sortFirstName}
+                sortLastName={sortLastName}
             />
         </div>
     )

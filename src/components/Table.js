@@ -12,8 +12,11 @@ function Table(props) {
                     <tr style={{ fontStyle: "italic" }}>
                         <th scope="col"></th>
                         <th scope="col">Name:
-                        <button style={{ border: 0, background: "white" }} onClick={props.sortName}>
-                            <i class="fas fa-sort-alpha-up"></i>
+                        <button style={{ border: 0, background: "white" }} onClick={props.sortFirstName}>
+                            <i className="fas fa-sort-alpha-up"></i>
+                        </button>
+                        <button style={{ border: 0, background: "white" }} onClick={props.sortLastName}>
+                            <i className="fas fa-sort-alpha-down"></i>
                         </button>
                         </th>
                         <th scope="col">Location:</th>
