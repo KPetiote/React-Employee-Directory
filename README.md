@@ -62,7 +62,7 @@ The program will then initialize and function as shown in the demo.
 
 ## Links
 - [Github Repository URL](https://github.com/Kpetiote/React-Employee-Directory)
-- [Hero Live Site](https://kenpet-react-employee-directory.herokuapp.com/)
+- [Hero Live Site](https://kenpet-react-employeedirectory.herokuapp.com/)
 ## Contribution
 None
 
