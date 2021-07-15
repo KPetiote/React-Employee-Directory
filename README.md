@@ -52,7 +52,7 @@ The program will then initialize and function as shown in the demo.
 
 ## Technologies
 - [Axios](https://www.npmjs.com/package/axios)
-- [Bootstrap](hhttps://getbootstrap.com/)
+- [Bootstrap](https://getbootstrap.com/)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [FontAwesome](https://fontawesome.com/)
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
